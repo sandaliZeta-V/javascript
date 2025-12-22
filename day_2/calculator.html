@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <p id = "demo"></p>
+        <script>
+
+            let num1 = Number(prompt("enter first number:"));
+            let num2 = Number(prompt("enter second number:"));
+            let operator = prompt ("Enter operator (+, -, *, /):");
+             let result;
+
+            switch (operator) {
+                case "+":
+                    result = num1 + num2;
+                    break;
+
+                case "-":
+                    result = num1 - num2;
+                    break;
+
+                case "*":
+                    result = num1 * num2;
+                    break;
+
+                case "/":
+                    result = num1 / num2;
+                    break;
+
+                default:
+                    result = "Invalid operator";
+            }
+
+            document.getElementById("demo").innerHTML =
+                "The result is: " + result;
+
+        </script>
+    </body>
+</html>

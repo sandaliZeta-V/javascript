@@ -1,0 +1,119 @@
+JavaScript Fundamentals:
+
+1. What is JavaScript?(Browser + Server)
+. JavaScript is the language of the web.
+. It calculates, manipulates, validates data.
+. update and change both html & CSS.
+. JavaScript files have the file extension .js.
+
+
+JavaScript Can Change HTML Content:
+.JavaScript HTML methods is getElementById().
+. JavaScript accepts both double and single quotes.
+
+The <script> Tag:
+. In HTML, JavaScript code is inserted between <script> and </script> tags.
+
+JavaScript Functions and Events:
+. A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+For example, a function can be called when an event occurs, like when the user clicks a button.
+
+JavaScript in <head>:
+. A JavaScript function is placed in the <head> section of an HTML page.
+  The function is invoked (called) when a button is clicked.
+
+JavaScript in <body>:
+. A JavaScript function is placed in the <body> section of an HTML page.
+The function is invoked (called) when a button is clicked.
+
+External JavaScript:
+. Scripts can also be placed in external files.
+. ex: <script src="myScript.js"></script>
+. External scripts cannot contain <script> tags.
+
+JavaScript Output:
+JavaScript can "display" data in different ways:
+
+. Writing into an HTML element, using innerHTML or innerText.
+. Writing into the HTML output using document.write().
+. Writing into an alert box, using window.alert().
+. Writing into the browser console, using console.log().
+. you can call the window.print() method in the browser to print the content of the current window.
+
+JavaScript Syntax:
+. The JavaScript syntax defines two types of values:
+Literals (Fixed values)-Numbers are written with or without decimals.
+Variables (Variable values) - Strings are text, written within double or single quotes.
+. JavaScript keywords are used to defines actions to be performed.
+. The let and const keywords create variables
+. JavaScript keywords are case-sensitive.
+
+
+JavaScript Variables:
+. Variables are containers for storing data values.
+. Variables must be identified with unique names.
+. You declare a JavaScript variable with the let keyword or the const keyword.
+. var vs let vs const:
+. var: Variables declared with the var always have Global Scope.
+       Variables declared with the var keyword can NOT have block scope.
+       Variables defined with var can be redeclared.	
+
+. let: use let if the value should be changed. Only use let if you cannot use const.
+       Variables declared with let have Block Scope.
+       Variables declared with let must be Declared before use.
+       Variables declared with let cannot be Redeclared in the same scope
+
+. const: use const if the value and type should not be changed
+
+
+JavaScript Identifiers:
+. An identifier is the name you give to a variable.
+. Rules for identifiers:
+Must start with a letter, _, or $
+Can contain digits after the first character
+Cannot be a reserved keyword (let, const, if, etc.)
+Are case-sensitive
+
+JavaScript Keywords:
+. JavaScript statements often start with a keyword to identify the JavaScript action to be performed.
+
+Keyword	Description:
+var	Declares a variable
+let	Declares a block variable
+const	Declares a block constant
+if	Marks a block of statements to be executed on a condition
+switch	Marks a block of statements to be executed in different cases
+for	Marks a block of statements to be executed in a loop
+function	Declares a function
+return	Exits a function
+try	Implements error handling to a block of statements
+
+JavaScript Comments:
+. JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+. JavaScript comments can also be used to prevent execution, when testing alternative code.
+. Single line comments start with //.
+. Multi-line comments start with /* and end with */.
+
+JavaScript Data Types:
+. Type			Description
+String		A text of characters enclosed in quotes
+Number		A number representing a mathematical value
+Bigint		A number representing a large integer
+Boolean		A data type representing true or false
+Object		A collection of key-value pairs of data
+Undefined	A primitive variable with no assigned value
+Null		A primitive value representing object absence
+Symbol		A unique and primitive identifier
+
+
+
+
+
+
+
+
+
+
+
+
+

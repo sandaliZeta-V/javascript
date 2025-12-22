@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Data Types</title>
+    </head>
+    <body>
+        <p>Printing values and type of data</p>
+        <p id="demo"></p>
+
+        <script>
+            let string = "Riya";                    
+            let num = 10;                           
+            let bigNum = 234568274885593724566n;   
+            let x = true;                           
+            const person = {firstName:"Riya", lastName:"Patel"}; 
+            const cars = ["Saab", "Volvo", "BMW"];  
+            let y;                                  
+            let z = null;                           
+            const r = Symbol("id");                 
+
+            document.getElementById("demo").innerHTML =
+                "string: " + string + " <br> " + typeof string + "<br><br>" +
+                "number: " + num + " <br> " + typeof num + "<br><br>" +
+                "bigint: " + bigNum + " <br> " + typeof bigNum + "<br><br>" +
+                "boolean: " + x + " <br>" + typeof x + "<br><br>" +
+                "object: " + JSON.stringify(person) + " <br>" + typeof person + "<br><br>" +
+                "array: " + cars + " <br>" + typeof cars + "<br><br>" +
+                "undefined: " + y + " <br>" + typeof y + "<br><br>" +
+                "null: " + z + " <br> " + typeof z + "<br><br>" +
+                "symbol: " + r.toString() + " <br> " + typeof r;
+        </script>
+    </body>
+</html>
