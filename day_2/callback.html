@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Callback Example</title>
+</head>
+<body>
+
+<h3>Callback Function Example</h3>
+
+<script>
+    
+    function calculate(a, b, callback) {    // Function that accepts a callback
+        let result = a + b;   // simple calculation
+        callback(result);    // call the callback function
+    }
+
+    function showResult(value) {            // Callback function
+        console.log("Result is:", value);
+    }
+
+    calculate(10, 20, showResult);           // Function call
+</script>
+
+</body>
+</html>
