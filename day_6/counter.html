@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<p id="num">0</p>
+
+<button onclick="num++ , show()">+</button>
+<button onclick="num-- , show()">-</button>
+<button onclick="num=0 , show()">Reset</button>
+
+<script>
+let num = 0;
+
+function show() {
+    document.getElementById("num").innerHTML = num;
+}
+</script>
+
+</body>
+</html>

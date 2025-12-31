@@ -1,0 +1,16 @@
+. Problems with DOM
+
+1.Slow Performance : Frequent direct DOM updates are slow and affect page speed.
+
+2.Complex UI Handling : Managing dynamic content with manual DOM manipulation is difficult.
+
+3.Hard to Maintain : Large DOM-based code becomes confusing and hard to manage.
+
+
+. Advantages of React
+
+1.Better Performance : React uses Virtual DOM to update only changed parts.
+
+2.Reusable Components : Code can be reused, saving time and effort.
+
+3.Easy UI Management : Declarative approach makes UI simple and predictable.

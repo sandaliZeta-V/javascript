@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Creating & Appending Elements -Create button dynamically
+            Create list items dynamically
+            Append to DOM
+        </title>
+    </head>
+    <body>
+          <h2>Creating & Appending Elements</h2>
+          <ol id = "demo"></ol>
+
+        <script>
+            let btn = document.createElement("button");  // create button dynamically
+            btn.innerText = "Add items";
+            document.body.appendChild(btn);      // Append button to page
+
+            btn.onclick = function () {     // When button is clicked
+                                                                       
+                let li = document.createElement("li");      // Create a list item
+                li.innerText = "new item!";
+
+                 document.getElementById("demo").appendChild(li);   // Add list item to the list
+            }
+        </script>
+    </body>
+</html>

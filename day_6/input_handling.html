@@ -1,0 +1,18 @@
+<html>
+<body>
+
+    Name: <input type="text" id="name">
+    <button onclick="show()">Click</button>
+
+    <p id="result"></p>
+
+    <script>
+        function show() {
+            let x = document.getElementById("name").value; // read input
+            document.getElementById("result").innerHTML = x; // display
+            document.getElementById("name").value = ""; // clear input
+        }
+    </script>
+
+</body>
+</html>

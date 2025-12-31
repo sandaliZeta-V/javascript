@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>DOM Example</title>
+</head>
+<body>
+
+    <h2 id="demo1">Hello World</h2>
+    <p class="demo2">This is a paragraph</p>
+
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        
+        let heading = document.getElementById("demo1"); // Select element using getElementById
+        console.log(heading.textContent);   // Print text in console
+
+        let para = document.querySelector(".demo2");     // Select element using querySelector
+       
+        function changeText() {                         // Function to change text content
+            heading.textContent = "DOM Text Changed!";
+            para.textContent = "Paragraph text updated using DOM";
+        }
+    </script>
+
+</body>
+</html>
