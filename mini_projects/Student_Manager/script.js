@@ -1,7 +1,7 @@
 // Array to store students
 let students = [];
 
-// Add student
+// Add student 
 function addStudent() {
     let name = document.getElementById("name").value;
     let marks = document.getElementById("marks").value;
@@ -11,25 +11,32 @@ function addStudent() {
         marks: Number(marks)
     };
 
-    students.push(student);   // store student in array
+    students.push(student);
 
     document.getElementById("name").value = "";
     document.getElementById("marks").value = "";
+
+    displayStudent(); 
 }
 
-// Display all students
+// Display all students with Update & Delete buttons
 function displayStudent() {
     let list = document.getElementById("studentList");
     list.innerHTML = "";
 
-    students.map(function(student) {
+    students.map(function(student, index) {
         let li = document.createElement("li");
-        li.innerText = student.name + " - " + student.marks;
+
+        li.innerHTML =
+            student.name + " - " + student.marks +
+            ' <button onclick="updateStudent(' + index + ')">Update</button>' +
+            ' <button onclick="deleteStudent(' + index + ')">Delete</button>';
+
         list.appendChild(li);
     });
 }
 
-// Show passed students (marks >= 35)
+// Show passed students only
 function passedStudent() {
     let list = document.getElementById("studentList");
     list.innerHTML = "";
@@ -45,20 +52,21 @@ function passedStudent() {
     });
 }
 
-// Delete last student
-function deleteStudent() {
-    students.pop();   // removes last student
+// Delete student by index
+function deleteStudent(index) {
+    students = students.filter(function(student, i) {
+        return i !== index;
+    });
+
     displayStudent();
 }
 
-
-// Update marks immutably
-function updateStudent() {
-    let studentName = prompt("Enter student name to update marks:");
+// Update marks immutably using index
+function updateStudent(index) {
     let newMarks = prompt("Enter new marks:");
 
-    students = students.map(function(student) {
-        if (student.name === studentName) {
+    students = students.map(function(student, i) {
+        if (i === index) {
             return {
                 ...student,
                 marks: Number(newMarks)
