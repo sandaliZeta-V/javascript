@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+input {
+    padding: 8px;
+    margin: 8px;
+    width: 180px;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 6px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+h3 {
+    color: #22303e;
+}
+
+ol {
+    background-color: white;
+    padding: 15px;
+    width: 300px;
+}
+
+li {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+}

@@ -50,3 +50,22 @@ function deleteStudent() {
     students.pop();   // removes last student
     displayStudent();
 }
+
+
+// Update marks immutably
+function updateStudent() {
+    let studentName = prompt("Enter student name to update marks:");
+    let newMarks = prompt("Enter new marks:");
+
+    students = students.map(function(student) {
+        if (student.name === studentName) {
+            return {
+                ...student,
+                marks: Number(newMarks)
+            };
+        }
+        return student;
+    });
+
+    displayStudent();
+}

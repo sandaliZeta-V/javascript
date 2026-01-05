@@ -20,7 +20,7 @@ function displayTask() {
         list.appendChild(li);
     }
 }
-
+  
 // Delete Task
 function deleteTask() {
     tasks.pop();
